@@ -40,3 +40,62 @@ nav ul li a{
 nav ul li a:hover{
 	color:black;
 }
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0;
+}
+.col-1{
+	flex-basis: 60%;
+	position: relative;
+	margin-left: 10px;
+}
+.col-1 h2{
+	font-size: 138.1px;
+	font-family:"Uni Sans Heavy CAPS";
+	color: #235196;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	
+}
+.col-1 h3{
+	font-size: 99.2px;
+	font-family:  "Uni Sans Thin Italic CAPS";
+	color: #4DD0E1;
+	font-weight: 100;
+	margin-top: -1.5vw;
+	margin-bottom: 0px;
+}
+.col-1 p{
+	font-size: 27px;
+	font-family: Bahnschrift;
+	font-weight: 100;
+	color: #8E8E8E;
+}
+button{
+	width: 200px;
+	border: 0;
+	outline: none;
+	padding: 12px 10px;
+	background-color: #235196;
+	color:white;
+	font-family: Bahnschrift;
+	font-weight: 100;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 40px;
+}
+.col-2{
+	position:relative;
+	flex-basis: 40%;
+	display:flex;
+	align-items:center;
+}
+.col-2 .full-width{
+	width: 1050px;
+	margin-left: -10vw;
+	margin-right: -10vw;
+	margin-bottom: -10vw;
+	margin-top: -2vw;
+}
