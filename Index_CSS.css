@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 .container{
 	width: 100%;
 	min-height: 100vh;
@@ -34,11 +35,26 @@ nav ul li a{
 	font-size: 38.8px;
 	font-family:Bahnschrift;
 	font-weight: 100;
-	
-	
+	position: relative;
 }
 nav ul li a:hover{
-	color:black;
+	color: grey;
+}
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -0.5vw;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background-color:#4DD0E1 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after{
+     width: 100%; 
+     left: 0; 
 }
 .row{
 	display: flex;

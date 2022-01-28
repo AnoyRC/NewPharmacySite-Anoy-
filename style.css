@@ -1,0 +1,55 @@
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 5%;
+	padding-right: 2%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items:baseline;
+}
+.logo{
+	width: 300px;
+	cursor: pointer;
+	margin: 20px 0;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 40px;
+	padding-right: 2%;
+}
+nav ul li a{
+	text-decoration: none;
+	color:#4DD0E1;
+	font-size: 38.8px;
+	font-family:Bahnschrift;
+	font-weight: 100;
+	position: relative;
+}
+nav ul li a:hover{
+	color:black;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background-color: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after{
+     width: 100%; 
+     left: 0; 
+}
