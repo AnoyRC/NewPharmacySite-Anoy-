@@ -89,18 +89,47 @@ a:hover:after{
 	font-weight: 100;
 	color: #8E8E8E;
 }
-button{
-	width: 200px;
-	border: 0;
-	outline: none;
-	padding: 12px 10px;
-	background-color: #235196;
-	color:white;
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #4DD0E1;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+	bottom: 0;
+    fill: none;
+    stroke: #235196;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #235196;
+	border: 2px solid #235196;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: #8E8E8E;
 	font-family: Bahnschrift;
 	font-weight: 100;
-	font-size: 20px;
-	cursor: pointer;
-	border-radius: 40px;
+    font-size: 23px;
+    font-weight: 100;
+	transition: 1s;
+}
+.btn:hover span{
+	color: white;
 }
 .col-2{
 	position:relative;
