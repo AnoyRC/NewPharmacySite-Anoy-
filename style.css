@@ -1,65 +1,139 @@
-
-body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: #5CA4EA;
-  overflow: hidden;
-  font-family: 'Lato', sans-serif;
+.container{
+	width: 100%;
+	min-height: 100vh;
+	margin-left: 5%;
+	margin-right: 2%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.navbar{
+	width: 100%;
+}
+.navbar-brand{
+	margin-left: 5%;
+}
+#navmenu{
+	margin-left: 33%;
+}
+.nav-item{
+    text-align: center;
+	margin-right: 50px;
+	margin-top: 20px;
 }
 
-.container {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-item a{
+	text-decoration: none;
+	font-size: 38.8px;
+	font-family:Bahnschrift;
+	font-weight: 100;
+	position: relative;
+	color:#4DD0E1;
 }
-
-.center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
+.nav-item a:hover{
+	color: grey;
+	
 }
-
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -0.5vw;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background-color:#4DD0E1;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after{
+     width: 100%; 
+     left: 0; 
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0;
+}
+.col-1{
+	flex-basis: 60%;
+	position: relative;
+	margin-left: 10px;
+}
+.col-1 h2{
+	font-size: 138.1px;
+	font-family:"Uni Sans Heavy CAPS";
+	color: #235196;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	
+}
+.col-1 h3{
+	font-size: 99.2px;
+	font-family:  "Uni Sans Thin Italic CAPS";
+	color: #4DD0E1;
+	font-weight: 100;
+	margin-top: -1.5vw;
+	margin-bottom: 0px;
+}
+.col-1 p{
+	font-size: 27px;
+	font-family: Bahnschrift;
+	font-weight: 100;
+	color: #8E8E8E;
+}
 .btn {
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #91C9FF;
-  outline: none;
-  transition: 1s ease-in-out;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #4DD0E1;
+    outline: none;
+    transition: 1s ease-in-out;
 }
 
 svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
+    position: absolute;
+    left: 0;
+	bottom: 0;
+    fill: none;
+    stroke: #235196;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
 }
 
 .btn:hover {
-  transition: 1s ease-in-out;
-  background: #4F95DA;
+    transition: 1s ease-in-out;
+    background: #235196;
+	border: 2px solid #235196;
 }
 
 .btn:hover svg {
-  stroke-dashoffset: -480;
+    stroke-dashoffset: -480;
 }
 
 .btn span {
-  color: white;
-  font-size: 18px;
-  font-weight: 100;
+    color: #8E8E8E;
+	font-family: Bahnschrift;
+	font-weight: 100;
+    font-size: 23px;
+    font-weight: 100;
+	transition: 1s;
 }
-
+.btn:hover span{
+	color: white;
+}
+.col-2{
+	position:relative;
+	flex-basis: 40%;
+	display:flex;
+	align-items:center;
+}
+.col-2 .full-width{
+	width: 1050px;
+	margin-left: -10vw;
+	margin-right: -10vw;
+	margin-bottom: -10vw;
+	margin-top: -2vw;
+}
