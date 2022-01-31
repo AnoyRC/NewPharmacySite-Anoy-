@@ -38,7 +38,7 @@
 }
 a:after {    
     background: none repeat scroll 0 0 transparent;
-    bottom: -0.5vw;
+    bottom: 0vw;
     content: "";
     display: block;
     height: 3px;
