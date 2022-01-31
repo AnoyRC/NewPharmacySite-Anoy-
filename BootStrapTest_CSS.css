@@ -142,3 +142,30 @@ svg {
 	margin-bottom: -10vw;
 	margin-top: -2vw;
 }
+@media only screen and (max-width:700px){
+	.d-sm-flex{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+		align-items: baseline;
+	}
+	.col-1{
+		flex-basis:100%;
+		width: 100%;
+
+	}
+	.col-1 h2{
+		font-size: 80px;
+	}
+	.col-1 h3{
+		font-size: 60px;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.col-2 .full-width{
+		margin-top: 70px;
+		width: 500px;
+		margin-left: 1px;
+	}
+}
