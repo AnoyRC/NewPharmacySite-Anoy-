@@ -52,7 +52,7 @@ a:hover:after{
      width: 100%; 
      left: 0; 
 }
-.row{
+.d-sm-flex{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -100,7 +100,7 @@ svg {
     position: absolute;
     left: 0;
 	bottom: 0;
-	margin-left: 12px;
+	margin-left: 0px;
     fill: none;
     stroke: #235196;
     stroke-dasharray: 150 480;
