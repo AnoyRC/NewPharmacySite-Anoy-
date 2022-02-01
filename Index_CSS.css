@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+body {
+  overflow: hidden; 
+}
 .container-fluid{
 	width: 100%;
 	min-height: 100vh;
@@ -143,6 +145,9 @@ svg {
 	margin-top: -2vw;
 }
 @media only screen and (max-width:700px){
+	body{
+		overflow: visible;
+	}
 	.nav-item{
 		text-align: left;
 	}
