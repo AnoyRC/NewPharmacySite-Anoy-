@@ -60,6 +60,7 @@ a:hover:after{
 	margin-top:165px;
 }
 .col-1{
+	margin-top: 200px;
 	flex-basis: 55%;
 	position: relative;
 	margin-left: 10px;
@@ -86,49 +87,7 @@ a:hover:after{
 	font-weight: 100;
 	color: #8E8E8E;
 }
-.btn {
-    width: 180px;
-    height: 60px;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid #4DD0E1;
-    outline: none;
-    transition: 1s ease-in-out;
-}
 
-svg {
-    position: absolute;
-    left: 0;
-	bottom: 0;
-	margin-left: 0px;
-    fill: none;
-    stroke: #235196;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-}
-
-.btn:hover {
-    transition: 1s ease-in-out;
-    background: #235196;
-	border: 2px solid #235196;
-}
-
-.btn:hover svg {
-    stroke-dashoffset: -480;
-}
-
-.btn span {
-    color: #8E8E8E;
-	font-family: Bahnschrift;
-	font-weight: 100;
-    font-size: 23px;
-    font-weight: 100;
-	transition: 1s;
-}
-.btn:hover span{
-	color: white;
-}
 .col-2{
 	position:relative;
 	flex-basis: 40%;
@@ -140,8 +99,82 @@ svg {
 	margin-left: -10vw;
 	margin-right: -10vw;
 	margin-bottom: -10vw;
-	margin-top: -2vw;
+	margin-top: -1vw;
 }
+.row2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 300px 0;
+	margin-bottom: 0px;
+}
+.col-3{
+	position:relative;
+	flex-basis: 40%;
+	display:flex;
+	align-items:center;
+}
+.col-3 .full-width-2{
+	width: 2000px;
+	margin-left: -10vw; 
+}
+.col-4{
+	flex-basis: 60%;
+	position: relative;
+	margin-left: 10px;
+}
+.col-4 h3{
+	font-size: 99.2px;
+	font-family:  "Uni Sans Thin Italic CAPS";
+	color: #4DD0E1;
+	font-weight: 100;
+	margin-bottom: 0px;
+	margin-left: 100px;
+}
+.col-4 p{
+	font-size: 27px;
+	font-family: Bahnschrift;
+	font-weight: 100;
+	color: #8E8E8E;
+	margin-left: 100px;
+}
+.row3{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 0;
+}
+.col-5{
+	flex-basis: 60%;
+	position: relative;
+	margin-left: 10px;
+}
+.col-5 h3{
+	font-size: 99.2px;
+	font-family:  "Uni Sans Thin Italic CAPS";
+	color: #4DD0E1;
+	font-weight: 100;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.col-5 p{
+	font-size: 27px;
+	font-family: Bahnschrift;
+	font-weight: 100;
+	color: #8E8E8E;
+}
+.col-6{
+	position:relative;
+	flex-basis: 40%;
+	display:flex;
+	align-items:center;
+}
+.col-6 .full-width-3{
+	width: 900px;
+	margin-top: 100px;
+	margin-left: -2vw;
+}
+
 @media only screen and (max-width:700px){
 	.nav-item{
 		text-align: left;

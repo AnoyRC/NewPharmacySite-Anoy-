@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.container{
+.container-fluid{
 	width: 100%;
 	min-height: 100vh;
 	padding-left: 5%;
@@ -11,44 +11,40 @@
 }
 .navbar{
 	width: 100%;
-	display: flex;
-	align-items:baseline;
 }
-.logo{
-	width: 300px;
-	cursor: pointer;
-	margin: 20px 0;
+.navbar-brand{
+	margin-left: 5%;
 }
-nav{
-	flex: 1;
-	text-align: right;
+#navmenu{
+	margin-left: 33%;
 }
-nav ul li{
-	list-style: none;
-	display: inline-block;
-	margin-right: 40px;
-	padding-right: 2%;
+.nav-item{
+    text-align: center;
+	margin-right: 50px;
+	margin-top: 20px;
 }
-nav ul li a{
+
+.nav-item a{
 	text-decoration: none;
-	color:#4DD0E1;
 	font-size: 38.8px;
 	font-family:Bahnschrift;
 	font-weight: 100;
 	position: relative;
+	color:#4DD0E1;
 }
-nav ul li a:hover{
+.nav-item a:hover{
 	color: grey;
+	
 }
 a:after {    
     background: none repeat scroll 0 0 transparent;
-    bottom: -0.5vw;
+    bottom: 0vw;
     content: "";
     display: block;
     height: 3px;
     left: 50%;
     position: absolute;
-    background-color:#4DD0E1 ;
+    background-color:#4DD0E1;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -56,14 +52,15 @@ a:hover:after{
      width: 100%; 
      left: 0; 
 }
-.row{
+.d-sm-flex{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 50px 0;
+	margin-top:165px;
 }
 .col-1{
-	flex-basis: 60%;
+	flex-basis: 55%;
 	position: relative;
 	margin-left: 10px;
 }
@@ -103,6 +100,7 @@ svg {
     position: absolute;
     left: 0;
 	bottom: 0;
+	margin-left: 0px;
     fill: none;
     stroke: #235196;
     stroke-dasharray: 150 480;
@@ -143,4 +141,41 @@ svg {
 	margin-right: -10vw;
 	margin-bottom: -10vw;
 	margin-top: -2vw;
+}
+@media only screen and (max-width:700px){
+	.nav-item{
+		text-align: left;
+	}
+	.nav-item a{
+		font-size: 25px;
+	}
+	#navmenu{
+		margin-left: 5%;
+	}
+	.d-sm-flex{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+		align-items: baseline;
+	}
+	.col-1{
+		flex-basis:100%;
+		width: 100%;
+
+	}
+	.col-1 h2{
+		font-size: 80px;
+	}
+	.col-1 h3{
+		font-size: 60px;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.col-2 .full-width{
+		margin-top: 70px;
+		width: 500px;
+		margin-left: 1px;
+	}
+	
 }
