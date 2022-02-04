@@ -64,16 +64,8 @@ a:hover:after{
 .col-1{
 	flex-basis: 55%;
 	position: relative;
-	margin-left: 90px;
-	margin-top: 50px;
-}
-.col-1 h2{
-	font-size: 138.1px;
-	font-family:"Uni Sans Heavy CAPS";
-	color: #235196;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	
+	margin-left: 10px;
+	z-index: 100;
 }
 .col-1 h3{
 	font-size: 99.2px;
@@ -83,31 +75,75 @@ a:hover:after{
 	margin-top: -1.5vw;
 	margin-bottom: 0px;
 }
+.col-1 .input-group{
+	font-family: Bahnschrift;
+	font-weight: 100;
+	width: 56%;
+}
 .col-1 p{
 	font-size: 27px;
 	font-family: Bahnschrift;
 	font-weight: 100;
 	color: #8E8E8E;
-	line-height: normal;
+	margin-bottom: 30px;
+}
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #4DD0E1;
+    outline: none;
+    transition: 1s ease-in-out;
 }
 
+svg {
+    position: absolute;
+    left: 0;
+	bottom: 0;
+	margin-left: 0px;
+    fill: none;
+    stroke: #235196;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #235196;
+	border: 2px solid #235196;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: #8E8E8E;
+	font-family: Bahnschrift;
+	font-weight: 100;
+    font-size: 23px;
+    font-weight: 100;
+	transition: 1s;
+}
+.btn:hover span{
+	color: white;
+}
 .col-2{
 	position:relative;
 	flex-basis: 40%;
 	display:flex;
 	align-items:center;
+	width: 100%;
+	
 }
 .col-2 .full-width{
-	width: 900px;
-	
-	margin-right: -2vw;
-	margin-bottom: -10vw;
-	margin-top: -2vw;
+	width: 2000px;
+    margin-left: -57vw;
+	margin-top: 200px;
 }
 @media only screen and (max-width:700px){
-	body{
-		overflow: visible;
-	}
 	.nav-item{
 		text-align: left;
 	}
@@ -125,14 +161,14 @@ a:hover:after{
 	.col-1{
 		flex-basis:100%;
 		width: 100%;
-		margin-left: 10px;
 
 	}
-	.col-1 h2{
-		font-size: 80px;
-	}
+
 	.col-1 h3{
 		font-size: 60px;
+	}
+	.col-1 .input-group{
+		width: 95%;
 	}
 	.col-2{
 		display: block;
@@ -141,8 +177,9 @@ a:hover:after{
 	}
 	.col-2 .full-width{
 		margin-top: 70px;
-		width: 400px;
-		margin-left: 50px;
+		width: 700px;
+		margin-left: -20vw;
+		z-index: 50;
 	}
 	
 }
