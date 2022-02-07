@@ -1,6 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+    font-family: 'uni_sansheavy_caps';
+    src: url('uni-sans.heavy-caps-webfont.woff2') format('woff2'),
+         url('uni-sans.heavy-caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'uni_sansthin_italic_caps';
+    src: url('uni-sans.thin-italic-caps-webfont.woff2') format('woff2'),
+         url('uni-sans.thin-italic-caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .container-fluid{
 	width: 100%;
 	min-height: 100vh;
@@ -67,7 +82,7 @@ a:hover:after{
 }
 .col-1 h2{
 	font-size: 138.1px;
-	font-family:"Uni Sans Heavy CAPS";
+	font-family:"uni_sansheavy_caps";
 	color: #235196;
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -75,7 +90,7 @@ a:hover:after{
 }
 .col-1 h3{
 	font-size: 99.2px;
-	font-family:  "Uni Sans Thin Italic CAPS";
+	font-family:  "uni_sansthin_italic_caps";
 	color: #4DD0E1;
 	font-weight: 100;
 	margin-top: -1.5vw;
@@ -126,7 +141,7 @@ a:hover:after{
 }
 .col-4 h3{
 	font-size: 99.2px;
-	font-family:  "Uni Sans Thin Italic CAPS";
+	font-family:  "uni_sansthin_italic_caps";
 	color: #4DD0E1;
 	font-weight: 100;
 	margin-bottom: 0px;
@@ -148,7 +163,7 @@ a:hover:after{
 }
 .col-5 h3{
 	font-size: 99.2px;
-	font-family:  "Uni Sans Thin Italic CAPS";
+	font-family:  "uni_sansthin_italic_caps";
 	color: #4DD0E1;
 	font-weight: 100;
 	margin-top: 0px;
